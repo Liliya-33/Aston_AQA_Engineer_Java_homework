@@ -1,9 +1,22 @@
 package org.example;
 
-import java.util.Arrays;
-
 public class Main {
     public static void main(String[] args) {
+        //Урок 6
+        Employee employee1 = new Employee();
+        employee1.full_name = "Иванов Иван Иванович";
+        employee1.job_title = "Старший разработчик";
+        employee1.email = "ivanov@mail.ru";
+        employee1.phone = "8 999 676 56 56";
+        employee1.salary = 200000;
+        employee1.age = 25;
+        employee1.infoEmployee();
+
+
+
+
+        /* Урок 4
+
         //Первое задание
         System.out.println("Первое задание:");
         printThreeWords();
@@ -223,7 +236,7 @@ public class Main {
         for (int i : arr) {
             System.out.print(i + " ");
         }
-        System.out.println();
+        System.out.println();*/
     }
 }
 
