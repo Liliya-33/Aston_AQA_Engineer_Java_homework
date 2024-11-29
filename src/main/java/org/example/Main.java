@@ -12,9 +12,6 @@ public class Main {
         employee1.age = 25;
         employee1.infoEmployee();
 
-
-
-
         /* Урок 4
 
         //Первое задание

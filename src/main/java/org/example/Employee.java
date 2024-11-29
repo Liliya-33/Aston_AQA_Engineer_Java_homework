@@ -13,5 +13,4 @@ public class Employee {
         "Электронная почта: " + email + "\n" + "Телефон: " + phone + "\n" + "Зарплата: " + salary + "\n" + "Возраст: " + age
         );
     }
-
 }
