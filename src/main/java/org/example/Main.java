@@ -26,6 +26,23 @@ public class Main {
             System.out.println();
         }
 
+        //Третье задание
+        Park.Attractions atrraction1 = new Park() .new Attractions();
+        Park.Attractions atrraction2 = new Park() .new Attractions();
+        Park.Attractions atrraction3 = new Park() .new Attractions();
+        atrraction1.name = "Колесо обозрения";
+        atrraction1.work_schedule = "12:00 - 00:00";
+        atrraction1.price = 500;
+        atrraction2.name = "Комната страха";
+        atrraction2.work_schedule = "10:00-20:00";
+        atrraction2.price = 350;
+        atrraction3.name = "Американские горки";
+        atrraction3.work_schedule = "09:00-21:00";
+        atrraction3.price = 700;
+
+        atrraction1.infoAttractions();
+        atrraction2.infoAttractions();
+        atrraction3.infoAttractions();
 
 
 
