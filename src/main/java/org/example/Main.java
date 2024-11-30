@@ -3,6 +3,7 @@ package org.example;
 public class Main {
     public static void main(String[] args) {
         //Урок 6
+        //Первое задание
         Employee employee1 = new Employee();
         employee1.full_name = "Иванов Иван Иванович";
         employee1.job_title = "Старший разработчик";
@@ -12,8 +13,24 @@ public class Main {
         employee1.age = 25;
         employee1.infoEmployee();
 
-        /* Урок 4
+        //Второе задание
+        Person[] personArray = new Person[5];
+        personArray[0] = new Person("Петров Петр Петрович", "Ручной тестировщик", "petrov@mail.ru", "8 987 654 65 56", 70000, 20);
+        personArray[1] = new Person("Сергеев Сергей Сергеевич", "Автоматизированный тестировщик", "sergeev@mail.ru", "8 987 354 25 26", 180000, 27);
+        personArray[2] = new Person("Марков Марк Маркович", "Младший разработчик", "markov@mail.ru", "8 987 604 45 52", 170000, 30);
+        personArray[3] = new Person("Кириллов Кирилл Кириллович", "Руководитель отдела разработки", "kirillov@mail.ru", "8 987 624 25 55", 230000, 23);
+        personArray[4] = new Person("Матвеев Матвей Матвеевич", "Руководитель проектов", "matveev@mail.ru", "8 987 644 45 54", 350000, 35);
 
+        for (Person person : personArray) {
+            person.infoPersons();
+            System.out.println();
+        }
+
+
+
+
+
+        /* Урок 4
         //Первое задание
         System.out.println("Первое задание:");
         printThreeWords();
