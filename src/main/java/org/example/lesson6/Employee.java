@@ -1,11 +1,13 @@
 package org.example.lesson6;
 
+import java.math.BigDecimal;
+
 public class Employee {
-    String full_name;
-    String job_title;
-    String email;
-    String phone;
-    int salary;
+    private String full_name;
+    private String job_title;
+    private String email;
+    private String phone;
+    private BigDecimal salary;
     int age;
 
     public void infoEmployee() {
