@@ -1,23 +1,34 @@
 package org.example.lesson10;
 
-public class Animal {
-    private static int count = 0; // Общее количество животных
+public abstract class Animal {
+    private static int totalAnimals = 0;
     protected String name;
+    protected boolean isFull;
 
     public Animal(String name) {
         this.name = name;
-        count++;
+        this.isFull = false;
+        totalAnimals++;
     }
 
-    public void run(int distance) {
-        System.out.println("Животное может бегать");
+    public abstract void run(int distance);
+    public abstract void swim(int distance);
+
+    public void eat(Bowl bowl, int amount) {
+        if (bowl.getFoodAmount() >= amount) {
+            bowl.decreaseFood(amount);
+            this.isFull = true;
+            System.out.println(this.name + " поел и теперь сыт.");
+        } else {
+            System.out.println(this.name + " не хватает еды в миске.");
+        }
     }
 
-    public void swim(int distance) {
-        System.out.println("Животное может плавать");
+    public boolean isFullness() {
+        return this.isFull;
     }
 
-    public static int getCount() {
-        return count;
+    public static int getTotalAnimals() {
+        return totalAnimals;
     }
 }
