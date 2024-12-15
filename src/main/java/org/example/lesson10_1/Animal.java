@@ -1,4 +1,4 @@
-package org.example.lesson10;
+package org.example.lesson10_1;
 
 public abstract class Animal {
     private static int totalAnimals = 0;
