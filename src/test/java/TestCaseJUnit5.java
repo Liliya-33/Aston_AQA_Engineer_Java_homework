@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
-public class TestCase {
+public class TestCaseJUnit5 {
 
     @Description("Тест для вычисления факторила числа 0 с использованием JUnit")
     @Test
