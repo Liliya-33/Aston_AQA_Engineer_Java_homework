@@ -139,8 +139,6 @@ public class TestCaseLesson15 {
             } catch (TimeoutException e) {
                 System.out.println("Элемент не найден в отведенное время.");
             }*/
-
-
     }
 }
 
